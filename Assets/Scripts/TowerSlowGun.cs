@@ -15,7 +15,7 @@ public class TowerSlowGun : TowerBase
     private void Start()
     {
         _draggable = GetComponent<DraggableTowerPlacement>();
-        InvokeRepeating("SpawnShoot", 0f, _fireRate);
+        InvokeRepeating(nameof(SpawnShoot), 0f, _fireRate);
     }
     
     private void SpawnShoot()

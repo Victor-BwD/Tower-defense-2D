@@ -13,16 +13,12 @@ public class Enemy : MonoBehaviour
     private Goal _goal;
     private CoinsGenerate _increaseCoins;
     private Score _score;
+    
     private void Start()
     {
         _goal = FindObjectOfType<Goal>();
         _increaseCoins = FindObjectOfType<CoinsGenerate>();
         _score = FindObjectOfType<Score>();
-    }
-
-    private void Update()
-    {
-        
     }
 
     private void OnTriggerEnter2D(Collider2D col)
