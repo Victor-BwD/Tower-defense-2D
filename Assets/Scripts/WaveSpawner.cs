@@ -48,16 +48,21 @@ public class WaveSpawner : MonoBehaviour
                     _waveCount++;
                     _countWaves.ChangeWaveNumber(_waveCount);
 
-                    if (_waveCount >= 3)
+                    switch (_waveCount)
                     {
-                        spawnDelay = 1;
-                        AddEnemy();
-                    }
-
-                    if (_waveCount >= 5)
-                    {
-                        spawnDelay = 0.5f;
-                        AddEnemy();
+                        case 2:
+                            ChangeDelay(1);
+                            AddEnemy();
+                            break;
+                        case 3:
+                            ChangeDelay(0.5f);
+                            AddEnemy();
+                            break;
+                        case 5:
+                            ChangeDelay(0.3f);
+                            AddEnemy();
+                            AddEnemy();
+                            break;
                     }
                 }
             }
@@ -68,5 +73,10 @@ public class WaveSpawner : MonoBehaviour
     {
         GameObject enemyChoosen = objectsToSpawn[Random.Range(0, objectsToSpawn.Count)];
         objectsToSpawn.Add(enemyChoosen);
+    }
+
+    private void ChangeDelay(float value)
+    {
+        spawnDelay = value;
     }
 }

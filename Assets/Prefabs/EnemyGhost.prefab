@@ -123,7 +123,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 128
   _damage: 20
-  _enemyHealth: 45
+  _enemyHealth: 65
   _killReward: 50
   _scoreReceive: 20
 --- !u!114 &9169380392110960856
