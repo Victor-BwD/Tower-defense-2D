@@ -51,7 +51,6 @@ public class DraggableTowerPlacement : MonoBehaviour
                 if (_canPlaceTurret)
                 {
                     transform.position = SnapToPosition(transform.position, Camera.main.ScreenToWorldPoint(Input.mousePosition));
-                    _isMoved = true;
                 }
                 else
                 {
@@ -70,6 +69,7 @@ public class DraggableTowerPlacement : MonoBehaviour
     {
         Collider2D[] hitColliders = Physics2D.OverlapBoxAll(transform.position, _collider2D.size, 0, towerSpotLayer);
         
+        _isMoved = true;
         
         return hitColliders.Length > 0;
     }
@@ -108,7 +108,7 @@ public class DraggableTowerPlacement : MonoBehaviour
         return position;
     }
 
-    public void OnMouseDown()
+    public void HandleMouseDown()
     {
         if (_isMoved) return;
         
@@ -121,6 +121,4 @@ public class DraggableTowerPlacement : MonoBehaviour
     {
         _spriteRenderer.color = Color.white;
     }
-    
-    
 }

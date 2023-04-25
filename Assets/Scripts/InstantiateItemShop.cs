@@ -26,7 +26,7 @@ public class InstantiateItemShop : MonoBehaviour
             spawnPosition.z = -0.20f;
             var instance = Instantiate(towerPrefab, spawnPosition, Quaternion.identity);
             _currentDraggableTowerPlacement = instance.GetComponent<DraggableTowerPlacement>();
-            _currentDraggableTowerPlacement.OnMouseDown();
+            _currentDraggableTowerPlacement.HandleMouseDown();
             DisableObject();
             
             _checkNumberOfTowers.TowerBuilt();
@@ -46,7 +46,7 @@ public class InstantiateItemShop : MonoBehaviour
     {
         if (_currentDraggableTowerPlacement != null)
         {
-            _currentDraggableTowerPlacement.OnMouseDown();
+            _currentDraggableTowerPlacement.HandleMouseDown();
         }
     }
 

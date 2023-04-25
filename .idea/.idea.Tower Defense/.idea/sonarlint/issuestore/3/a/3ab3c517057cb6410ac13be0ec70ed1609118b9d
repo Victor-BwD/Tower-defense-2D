@@ -1,6 +1,0 @@
-
-Ecsharpsquid:S3903"(Move 'Waypoints' into a named namespace.(ñîêµ
-mcsharpsquid:S1104"DMake this field 'private' and encapsulate it in a 'public' property.(€ıäíùÿÿÿÿ8ßú¡ö0
-…csharpsquid:S2386"\Use an immutable collection or reduce the accessibility of the public static field 'points'.(€ıäíùÿÿÿÿ8ßú¡ö0
-lcsharpsquid:S2223"CChange the visibility of 'points' or make it 'const' or 'readonly'.(€ıäíùÿÿÿÿ8àú¡ö0
-ycsharpsquid:S2696"UMake the enclosing instance method 'static' or remove this set on the 'static' field.(©ÒÓ’8àú¡ö0
