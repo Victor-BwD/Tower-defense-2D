@@ -11,11 +11,13 @@ public class InstantiateItemShop : MonoBehaviour
     private DraggableTowerPlacement _currentDraggableTowerPlacement;
     private CheckCoins _check;
     private CheckNumberOfTowers _checkNumberOfTowers;
+    private SpriteRenderer _spriteRenderer;
     
     private void Start()
     {
         _check = FindObjectOfType<CheckCoins>();
         _checkNumberOfTowers = FindObjectOfType<CheckNumberOfTowers>();
+        _spriteRenderer = GetComponent<SpriteRenderer>();
     }
 
     private async void OnMouseDown()
@@ -38,7 +40,11 @@ public class InstantiateItemShop : MonoBehaviour
         }
         else
         {
-            Debug.Log("Not enough cash, stranger");
+            _spriteRenderer.color = Color.red;
+
+            await Wait.WaitTime(0.4f);
+            
+            _spriteRenderer.color = Color.white;
         }
     }
     
