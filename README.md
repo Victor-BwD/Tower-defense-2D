@@ -1,5 +1,3 @@
-Esse é meu jogo, feito em 7 dias.
-
 Eu me inspirei no jogo BloonsTD6, onde hordas de balões vem e você precisa estourar eles com diversas torres.
 
 O jogo inicia parado, com você podendo comprar a torre que desejar pôr na partida. Para as hordas começarem a vir você precisa apertar o botão "Play".
