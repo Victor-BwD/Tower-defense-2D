@@ -3,6 +3,7 @@ using UnityEngine;
 public class DraggableTowerPlacement : MonoBehaviour
 {
     [SerializeField] private LayerMask towerSpotLayer;
+    [SerializeField] private LayerMask placedTowerLayer;
     [SerializeField] private float snapDistance = 0.1f;
     
     private Color invalidPlacementColor = Color.red;
@@ -69,14 +70,8 @@ public class DraggableTowerPlacement : MonoBehaviour
     {
         Collider2D[] hitColliders = Physics2D.OverlapBoxAll(transform.position, _collider2D.size, 0, towerSpotLayer);
         
-        if (hitColliders.Length > 0)
-        {
-            return true;
-        }
-        else
-        {
-            return false;
-        }
+        
+        return hitColliders.Length > 0;
     }
 
     private Vector3 SnapToPosition(Vector3 position, Vector3 mousePosition)
