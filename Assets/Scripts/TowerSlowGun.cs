@@ -20,7 +20,7 @@ public class TowerSlowGun : TowerBase
     
     private void SpawnShoot()
     {
-        if (!_draggable.IsMoved) return;
+        if (_draggable.IsDragging) return;
         
         var shoot = Instantiate(prefab, transform.position, quaternion.identity);
         Destroy(shoot, 0.6f);

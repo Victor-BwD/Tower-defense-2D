@@ -15,9 +15,7 @@ public class DraggableTowerPlacement : MonoBehaviour
     private SpriteRenderer _spriteRenderer;
     private bool _canPlaceTurret;
     private Vector2 _maxPosition;
-    private bool _isMoved = false;
-
-    public bool IsMoved => _isMoved;
+    
     public bool IsDragging => _isDragging;
 
     private void Start()
@@ -69,7 +67,7 @@ public class DraggableTowerPlacement : MonoBehaviour
     {
         Collider2D[] hitColliders = Physics2D.OverlapBoxAll(transform.position, _collider2D.size, 0, towerSpotLayer);
         
-        _isMoved = true;
+        _isDragging = true;
         
         return hitColliders.Length > 0;
     }
@@ -110,7 +108,7 @@ public class DraggableTowerPlacement : MonoBehaviour
 
     public void HandleMouseDown()
     {
-        if (_isMoved) return;
+        if (_isDragging) return;
         
         _isDragging = true;
         _startPosition = transform.position;
