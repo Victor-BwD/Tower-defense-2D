@@ -5,8 +5,6 @@ L
 Assets/Scripts/CheckCoins.cs,8\a\8a22b9462f61673a68672e47052a2f2190e30a42
 O
 Assets/Scripts/CoinsGenerate.cs,0\8\0829320b300a343364a4c9e2f3872155a923c430
-L
-Assets/Scripts/CountWaves.cs,c\b\cbe9fbbded22b33e50a630ae0b04ed3ac1a3d38d
 H
 Assets/Scripts/ITower.cs,b\4\b41f13d77bcb7dcf2cc4b961a11a05ca8fdca64f
 O
@@ -31,7 +29,5 @@ H
 Assets/Scripts/Bullet.cs,0\6\064be4b020de3808c0a7aadc9f3d13ec5902d1b1
 F
 Assets/Scripts/Wait.cs,d\8\d8c850c317b9b327499aaaab1daeb725c8880a77
-M
-Assets/Scripts/WaveSpawner.cs,5\5\55111093ad789aa94600771bb2562531fb05d51d
 K
 Assets/Scripts/StartWave.cs,8\6\86b7cfebf63eb27a2fc464b1303c5e72bb4f1c31

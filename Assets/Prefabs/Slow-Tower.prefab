@@ -132,7 +132,7 @@ MonoBehaviour:
     m_Bits: 256
   placedTowerLayer:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 1024
   snapDistance: 0.1
 --- !u!114 &3108238161685549319
 MonoBehaviour:

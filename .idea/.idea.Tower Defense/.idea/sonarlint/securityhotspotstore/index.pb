@@ -5,8 +5,6 @@ K
 Assets/Scripts/PriceText.cs,7\7\77c1348a5754dea81ba05c93bc72d90ef6d687ec
 L
 Assets/Scripts/CheckCoins.cs,8\a\8a22b9462f61673a68672e47052a2f2190e30a42
-L
-Assets/Scripts/CountWaves.cs,c\b\cbe9fbbded22b33e50a630ae0b04ed3ac1a3d38d
 H
 Assets/Scripts/ITower.cs,b\4\b41f13d77bcb7dcf2cc4b961a11a05ca8fdca64f
 O
@@ -33,5 +31,3 @@ O
 Assets/Scripts/EnemyMovement.cs,9\a\9acf520aaad434c77cf4f08afcbe1d7e87a298b5
 H
 Assets/Scripts/Bullet.cs,0\6\064be4b020de3808c0a7aadc9f3d13ec5902d1b1
-M
-Assets/Scripts/WaveSpawner.cs,5\5\55111093ad789aa94600771bb2562531fb05d51d
