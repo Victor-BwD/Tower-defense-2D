@@ -9,7 +9,9 @@ public class Goal : MonoBehaviour
     
     private Action _onDeath;
 
-    private DisplayHp _displayHp;
+    [SerializeField]private DisplayHp _displayHp;
+
+    public int MaxHealthPoints => _maxHealthPoints;
 
     public void AddDeathListener(Action listener)
     {
@@ -19,9 +21,6 @@ public class Goal : MonoBehaviour
     private void Start()
     {
         _actualHealthPoints = _maxHealthPoints;
-        _displayHp = FindObjectOfType<DisplayHp>();
-        
-        _displayHp.ShowHp(_actualHealthPoints);
     }
 
     public void TakeDamage(int damage)
