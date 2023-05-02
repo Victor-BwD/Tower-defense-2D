@@ -69,6 +69,7 @@ public class DraggableTowerPlacement : MonoBehaviour
     {
         Collider2D[] hitColliders = Physics2D.OverlapBoxAll(transform.position, _collider2D.size, 0, towerSpotLayer);
         
+        
         _isMoved = true;
         
         return hitColliders.Length > 0;
