@@ -1,35 +1,33 @@
-Eu me inspirei no jogo BloonsTD6, onde hordas de balões vem e você precisa estourar eles com diversas torres.
+I was inspired by the game BloonsTD6, where hordes of balloons come and you need to pop them with various towers.
 
-O jogo inicia parado, com você podendo comprar a torre que desejar pôr na partida. Para as hordas começarem a vir você precisa apertar o botão "Play".
+The game starts off paused, allowing you to purchase any tower you wish to deploy in the game. To start the hordes from coming, you need to press the "Play" button.
 
-Começa com 4 inimigos mais fracos, 3 médios e 2 fortes e assim se repete infinitamente. O jogador ao abater uma unidade recebe "coins" e pontuação. 
+It begins with 4 weaker enemies, 3 medium ones, and 2 strong ones, and this pattern repeats infinitely. When the player eliminates a unit, they receive coins and score.
 
-As "coins" são feitas para comprar novas unidades, a pontuação é o seu desempenho durante a partida e será mostrado a sua pontuação mais alta no final da partida.
+Coins are used to purchase new units, while the score represents your performance during the game and will display your highest score at the end.
 
-Eu tentei balancear as torres, sendo que você só pode colocar 5 torres no jogo inteiro e não é possivel remover torres já colocadas.
+I attempted to balance the towers, allowing players to place only 5 towers throughout the entire game, and it's not possible to remove towers once they are placed.
 
-Os inimigos não tem um pathfinder definido, eles apenas iniciam de um ponto A e vão até o ponto B, que é a linha branca chamada "goal".
+The enemies do not follow a predefined path; they simply start from point A and move towards point B, which is the white line called the "goal."
 
-Eu não usei o sistema de canvas do Unity, pois eu acho ruim de trabalhar com o sistema de UI do Unity. Eu usei mais sistemas de actions do C# e OnMouseDown.
+I didn't use Unity's canvas system because I find it cumbersome to work with Unity's UI system. Instead, I utilized more C# action systems and OnMouseDown.
 
-No jogo temos 3 tipos de torres:
-- A torreta: Dispara projéteis, é a única torre que causa dano no jogo.
-- A torre de lentidão: Desacelera a movimentação dos inimigos quando dispará sua "wave" de tempos em tempos, os inimigos que passarem por ela serão desacelerados.
-- A torre dos castelo: Ela da um "buff" à torre próximas, aumentando a cadência de tiro.
+In the game, there are 3 types of towers:
+- The Turret: It fires projectiles and is the only tower that deals damage in the game.
+- The Slow Tower: It slows down enemy movement when it releases its "wave" periodically, and enemies that pass through it are slowed down.
+- The Castle Tower: It buffs nearby towers, increasing their rate of fire.
 
-Os inimigos são 3:
-- O inimigo capsula: É o inimigo mais fraco, causa 10 de dano e tem 22 de vida. Também é o que menos da "coins" e pontuação.
-- O inimigo Fantasma: É o inimigo de nível médio do jogo, causa 20 de dano e tem 45 de vida.
-- O inimigo Diamante: É o inimigo mais forte, causa 30 de dano no jogador e tem 60 de vida.
+There are 3 types of enemies:
+- The Capsule Enemy: It is the weakest enemy, dealing 10 damage and having 22 health. It also gives the least amount of coins and score.
+- The Ghost Enemy: It is a medium-level enemy in the game, dealing 20 damage and having 45 health.
+- The Diamond Enemy: It is the strongest enemy, dealing 30 damage to the player and having 60 health.
 
-O jogador terá que trabalhar para que os inimigos não cheguem a linha branca e assim perca vida, podendo usar apenas torres de torreta ou alternar entre elas.
+The player will have to work to prevent the enemies from reaching the white line and thus losing health, using only turret towers or switching between them.
 
-Como eu disse, para começar o jogo o jogador precisa clickar no "Play". Tem também o botão de pause, onde o jogador poderá pausar o jogo, se clickar novamente no mesmo o jogo
-volta da onde parou.
+As I mentioned, to start the game, the player needs to click on "Play." There is also a pause button, allowing the player to pause the game, and clicking it again resumes the game from where it left off.
 
-Quando o jogador está sem vidas, o game over aparece e o jogador poderá apertar o botão de "restart" para recomeçar a cena.
+When the player runs out of lives, the game over screen appears, and the player can press the "restart" button to start the scene again.
 
-Para fazer o sistema de loja usei a classe Task do C# para fazer uma função assíncrona e respawnar o objeto assim que o jogador puxar a torre da loja.
+To create the store system, I used the C# Task class to make an asynchronous function and respawn the object as soon as the player pulls the tower from the store.
 
-Eu pensei em fazer uma versão bem demonstrativa, um MVP, para ir aprimorando ao longo do tempo. Tentei seguir o principio SOLID durante o desenvolvimento e as melhores práticas
-do OOP.
+I aimed to create a very demonstrative version, an MVP, to refine over time. I tried to follow the SOLID principles and best practices of OOP during the development process.
